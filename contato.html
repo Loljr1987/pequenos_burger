@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../styles/reset.css">
+      <link rel="stylesheet" href="../styles/style.css">
+      <title>Contato - Pequeno's Burger</title>
+   </head>
+   <body>
+       <header>
+             <div class="caixa">
+                  <h1><img src="../images/logo.png" alt="Logo Pequeno's Burger"></h1>
+                  <nav>
+                     <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="produtos.html">Produtos</a></li>
+                         <li><a href="contato.html">Contato</a></li>
+                     </ul>
+                  </nav>
+             </div>
+        </header>
+
+        <main>
+         <form>
+            <label for="nomeSobrenome">Nome e Sobrenome :</label>
+            <input type="text" id="nomeSobrenome" class="input-padrao" required placeholder="Digite seu nome ou sobrenome">
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="contato">Telefone :</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXX-XXXX">
+            
+            <label for="mensagem">Mensagem :</label>
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Digite sua mensagem aqui."></textarea>
+
+            <fieldset>
+               <legend>Como podemos lhe contactar?</legend>
+               <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+                              
+               <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+               
+               <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+               <legend>Não esqueça de deixar sua avaliação!</legend>
+            <select>
+               <option>Boa</option>
+               <option>Regular</option>
+               <option>Ruim</option>
+            </select>
+            </fieldset>
+            
+            <label class="checkbox">Gostaria de receber nossas promoções por email?</label>
+            <label><input type="radio" name="avaliacao" checked> Sim</label>
+            <label><input type="radio" name="avaliacao" > Não</label>
+
+            <input type="submit" value="Enviar Pedido" class="enviar">
+            
+         </form>
+         
+         <table>
+            <thead>
+               <tr>
+                  <th>Dia</th>
+                  <th>Horário</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Sex</td>
+                  <td>18h ~ 23h</td>
+               </tr>
+               <tr>
+                  <td>Sab</td>
+                  <td>18h ~ 23h</td>
+               </tr>
+               <tr>
+                  <td>Dom</td>
+                  <td>18h ~ 23h</td>
+               </tr>
+               </tbody>
+         </table>
+         
+        </main>
+
+        <footer>
+          <img src="images/logo-branco.png" alt="Logo Pequeno's Burger">
+          <p class="copyright">&copy;Copyright Pequenos's Burger - 2019</p>
+      </footer>
+ </body>
+</html>
